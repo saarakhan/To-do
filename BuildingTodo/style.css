@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Molengo", sans-serif;
+
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.bg-img {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    object-fit: cover;
+    z-index: -2;
+}
+
+#date-header {
+    width: 20%;
+    position: relative;
+    top: 3.125rem;
+    left: 3.125rem;
+}
+
+#input-task {
+    position: fixed;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 10px;
+}
+
+#task {
+    width: 70vw;
+    padding: 1rem;
+    border-radius: 7px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 20px;
+}
+
+input[type="text"]::placeholder {
+    color: white;
+    font-size: 20px;
+}
+
+.fa-plus {
+    color: white;
+}
+
+.btn {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.326);
+    transform: translateY(49px) translateX(-45px);
+    border: 1px solid black;
+}
+
+
+.ul-list {
+    list-style: none;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgba(0, 0, 0, 0.662);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    gap: 10px;
+    font-size: 1.2rem;
+    align-items: baseline;
+}
+
+.del {
+    background-color: rgba(0, 0, 0, 0.614);
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    position: relative;
+    left: 10px;
+    top: 2px;
+    border: none;
+}
+
+.h4 {
+    position: absolute;
+    top: 10%;
+    left: 45%;
+}
+
+@media (max-width:415px) {
+    .bg-img {
+        object-fit: cover;
+    }
+
+    #date-header {
+        width: 50%;
+    }
+
+    .ul-list {
+        width: 80%;
+    }
+
+    .h4 {
+        width: 50%;
+        position: relative;
+        top: 3.125rem;
+        left: 3.125rem;
+    }
+}
